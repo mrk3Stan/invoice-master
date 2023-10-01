@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/invoice-master
+    url: jdbc:postgresql://localhost:5432/invoice_master
     username: postgres
     password: password
   jpa:
@@ -16,5 +16,6 @@ spring:
         format_sql: true
   sql:
     init:
-      mode: never
+      mode: always
+      continue-on-error: false
 
